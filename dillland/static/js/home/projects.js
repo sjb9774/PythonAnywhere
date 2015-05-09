@@ -54,6 +54,17 @@ $(document).ready(function load() {
             myProjectsView.addProject(new Project(obj['name'], obj['status']));
         }
         ko.applyBindings(myProjectsView);
+        $('.project.link:not(.disabled)').hover(function hoverIn(event) {
+            var element = event.target;
+            $(element).data('naturalHeight', $(element).height());
+            $(element).stop();
+            $(element).animate({'height': 200}, {'duration': 500});
+        }, function hoverOut(event) {
+            var element = event.target;
+            $(element).stop();
+            $(element).animate({'height': $(element).data('naturalHeight')},
+                               {'duration': 200});
+        });
     });
 
 })
