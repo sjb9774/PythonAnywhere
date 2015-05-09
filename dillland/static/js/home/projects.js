@@ -1,25 +1,3 @@
-/*$(document).ready(function load(){
-    $('.project.wrapper.disabled').hover(function(event) {
-        var element = event.target;
-        var animateProps = { 'height': 100 };
-        var animateOptions = {'duration': 500,
-                              'complete': function(event) {
-                                  $(element).append('<div class="descriptor disabled">This project is not public!</div>');
-                              }
-        };
-        $(element).data('naturalHeight', $(element).height());
-
-        $(element).animate(animateProps, animateOptions);
-    }, function(event) {
-        var element = event.target;
-        $(element).children().remove('.descriptor');
-        var animateProps = {'height': $(element).data('naturalHeight')};
-        var animateOptions = {'duration': 200,
-                              'start': function() {$(element).children().remove('.descriptor');}
-        };
-        $(element).animate(animateProps, animateOptions);
-    })
-});*/
 var ProjectsView = function() {
     var self = this;
     self.activeProjects = ko.observableArray([]);
@@ -54,9 +32,12 @@ $(document).ready(function load() {
             myProjectsView.addProject(new Project(obj['name'], obj['status']));
         }
         ko.applyBindings(myProjectsView);
-        $('.project.link:not(.disabled)').hover(function hoverIn(event) {
+
+        $('.project.wrapper:not(.disabled)').hover(function hoverIn(event) {
             var element = event.target;
-            $(element).data('naturalHeight', $(element).height());
+            if (!$(element).data('naturalHeight')) {
+                $(element).data('naturalHeight', $(element).height());
+            }
             $(element).stop();
             $(element).animate({'height': 200}, {'duration': 500});
         }, function hoverOut(event) {

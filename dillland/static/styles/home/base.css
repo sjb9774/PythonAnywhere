@@ -9,13 +9,23 @@ a {
     color: inherit;
 }
 
+.project {
+    text-align: center;
+}
+
+.project.header {
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+
 .project.info {
     background-color: #cfe0e5;
     padding: 25px;
 }
 
-.project {
-    text-align: center;
+.project.section:not(.disabled) {
+    margin-bottom: 100px;
 }
 
 .project.wrapper {
@@ -30,7 +40,7 @@ a {
 }
 
 .project.link {
-    color: #225599;
+    color: #495a6d;
 }
 
 .project.link:not(.disabled):hover {
