@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% include 'faq-js.html' %}
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div class="content-section">
+            <h2 class="section-header">FAQs</h2>
+            <ul>
+                <li>
+                    <a id="boundary_link" href="#boundary">What is a boundary survey?</a>
+                </li>
+                <li>
+                    <a id="cost_link" href="#cost">How much does it cost to get a parcel surveyed</a>
+                </li>
+                <li>
+                    <a id="parcel_link" href="#fence">My property is fenced, does that help?</a>
+                </li>
+            </ul>
+        </div>
+
+        <a id="boundary"></a>
+        <div id="boundary_faq" class="content-section">
+
+            <h2 class="section-header">What is a boundary survey?</h2>
+            <div class="content">
+                <p>
+                    A boundary survey consists of several elements.
+                </p>
+                <p>
+                    A land surveyor begins
+                    by obtaining a copy of the client’s deed. There is a description on
+                    the deed that defines the boundaries of the land to be surveyed. This
+                     description, usually referred to as a boundary or "legal"
+                     description, actually contains instructions for the surveyor, it
+                     tells the surveyor what must be found and measured to the real world
+                    in order to find or place monuments at the corners of the client’s
+                    property. Next, a surveyor does research to find out if other
+                    surveyors have been in the area at some point in the past.
+                    Surveyors search at courthouses, title company offices, highway
+                    departments… practically anywhere that documents might exist to help
+                    correctly determine boundaries.
+                </p>
+                <p>
+                    Next, surveyors come to the property
+                    and look for monuments that help determine the size and shape of the
+                    described parcel. Sometimes, if the parcel has been surveyed in the
+                    past, the surveyor checks or verifies that the corner monuments are
+                    in the proper place. Or new monuments may be driven into the ground
+                    to mark the boundaries. Then the results are published as a drawing
+                    called a survey plat. The plat should show everything pertinent to
+                    determining the boundaries of your property. In the end, your
+                    boundary determination is the professional opinion of the land
+                    surveyor who does the survey, so get a surveyor with a good
+                    reputation.
+                </p>
+            </div>
+        </div>
+
+        <a id="cost"></a>
+        <div id="cost_faq" class="content-section">
+            <h2 class="section-header">How much does it cost to get a parcel surveyed?</h2>
+            <div class="content">
+                <p>
+                    Every survey is somewhat unique. There may be physical obstacles like
+                    bluffs, trees, rivers, and buildings that make the physical
+                    measurements more difficult to obtain. There could be ambiguity in
+                    the description that makes it difficult to determine what the author
+                    of the description intended. The costs can vary wildly depending on
+                    the amount of surveying by other competent surveyors in the area in
+                    the recent past. Estimates are free and usually take a day or two to
+                    do some basic research and determine the cost.
+                </p>
+            </div>
+        </div>
+
+        <a id="fence"></a>
+        <div id="parcel_faq" class="content-section">
+            <h2 class="section-header">My property is fenced, does that help?</h2>
+            <div class="content">
+                <p>
+                    Not really. Unless your description actually calls out the fence it is
+                    generally immaterial to me.
+                </p>
+                <p>
+                    It is my job to put your deed description
+                    on the ground. Hopefully your fence was built in the correct place to
+                    start with. However, it has been my experience that most fences are
+                    built based on a bad guess. But, if a fence is in the same position
+                    for a long period of time, it may have accrued unwritten rights for
+                    the property owner along that particular boundary line. You may want
+                    to consult an attorney at that point. The fence would generally be
+                    shown on the plat since it is evidence of physical possession.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

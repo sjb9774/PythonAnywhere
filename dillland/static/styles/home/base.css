@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+body {
+    font-family: 'Droid Serif', serif;
+    background-color: #FCF3E4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project.wrapper {
+    margin: 10px;
+    padding: 10px;
+    background-color: #6699CC;
+    text-align: center;
+}
+
+.project.wrapper.disabled {
+    background-color: #EEEEEE;
+}
+
+.project.link {
+    color: #225599;
+}
+
+.project.link:not(.disabled):hover {
+    color: #FFFFFF;
+}
+
+.disabled {
+    color: #4E3B2A;
+}
+
+.descriptor {
+    margin: 50px;
+}

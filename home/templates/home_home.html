@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    <head>
+
+    </head>
+    <body>
+        {% for project_name in projects %}
+        {% if projects[project_name]['active'] == 1 %}
+            <a href='{{projects[project_name]["home"]}}'>{{project_name}}</a>
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>

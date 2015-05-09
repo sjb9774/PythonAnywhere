@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <head>
+    {% include '/home/head.html' %}
+    </head>
+    <body>
+        <div class='project info'>
+            <h1>Stephen's Projects</h1>
+            <!--ko foreach: activeProjects-->
+                <div class="project wrapper">
+                    <a class="project link" data-bind="text: name"></a>
+                </div>
+            <!--/ko-->
+            <!--ko if: inactiveProjects-->
+            <h3>Inactive Projects</h3>
+            <!--/ko-->
+            <!--ko foreach: inactiveProjects-->
+                <div class="project wrapper disabled">
+                    <a class="project link disabled" data-bind="text: name"></a>
+                </div>
+            <!--/ko-->
+        </div>
+    </body>
+</html>
