@@ -3,8 +3,10 @@
     {% include '/home/head.html' %}
     </head>
     <body>
-        <div class='project info'>
+        <div class='project header'>
             <h1>Stephen's Projects</h1>
+        </div>
+        <div class='project info'>
             <!--ko foreach: activeProjects-->
                 <div class="project wrapper">
                     <a class="project link" data-bind="text: name"></a>

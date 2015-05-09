@@ -35,11 +35,6 @@ def contact():
 def links():
     return render_template('links.html')
 
-@app.route('/get/<key_val>', methods=["GET"])
-def info(key_val):
-    d = { "stephen":"cool man", "others":"not cool man", "magellan":"take it or leave it" }
-    return d.get(key_val, "NOT FOUND")
-
 @app.route('/api/get/projects', methods=["GET"])
 def get_projects():
     global projects

@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Abel);
 body {
-    font-family: 'Droid Serif', serif;
-    background-color: #FCF3E4;
+    font-family: 'Abel', sans-serif;
+    background-color: #FFFFFF;
 }
 
 a {
@@ -9,10 +9,19 @@ a {
     color: inherit;
 }
 
+.project.info {
+    background-color: #cfe0e5;
+    padding: 25px;
+}
+
+.project {
+    text-align: center;
+}
+
 .project.wrapper {
     margin: 10px;
     padding: 10px;
-    background-color: #6699CC;
+    background-color: #daecf2;
     text-align: center;
 }
 
