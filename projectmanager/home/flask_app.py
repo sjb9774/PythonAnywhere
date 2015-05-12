@@ -1,3 +1,4 @@
+#! /usr/local/bin/python
 from flask import Flask, render_template, request
 import json
 
@@ -13,11 +14,12 @@ INACTIVE = 0
 projects =  [{'name':'Dill Land Surveying', 'status': INACTIVE,
                'home': project_1_prefix + '/index.html'},
              {'name': 'Keen Testing', 'status': ACTIVE,
-              'home': project_2_prefix + '/index.html'}]
+              'home': project_2_prefix + '/index.html'},
+              {'name': 'Bin Buckets', 'status': INACTIVE}]
 
 @app.route('/')
 def home():
-    return render_template('./home/home_home.html')
+    return render_template('home_home.html')
 
 @app.route(project_1_prefix + '/index.html')
 def p1_home():

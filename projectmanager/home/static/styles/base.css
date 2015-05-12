@@ -35,6 +35,9 @@ a {
     text-align: center;
 }
 
+.project.wrapper:hover {
+    background-color: #e4f4f8;
+}
 .project.wrapper.disabled {
     background-color: #EEEEEE;
 }
