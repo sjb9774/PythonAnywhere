@@ -43,7 +43,8 @@ def get_projects():
     return json.dumps(projects)
 
 @app.route('/api/applog', methods=["POST"])
-def log_data(data):
+def log_data():
+    data = request.data
     with open('/home/sjb9774/logs/log.txt', 'r+') as f:
         f.write(data)
     return json.dumps({'success': True})
