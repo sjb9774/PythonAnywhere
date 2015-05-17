@@ -1,6 +1,8 @@
 #! /usr/local/bin/python
 from flask import Flask, render_template, request
 import json
+import os
+import pudb
 
 app = Flask(__name__)
 
@@ -41,10 +43,3 @@ def links():
 def get_projects():
     global projects
     return json.dumps(projects)
-
-@app.route('/api/applog', methods=["POST"])
-def log_data():
-    data = request.data
-    with open('/home/sjb9774/logs/log.txt', 'w+') as f:
-        f.write(data)
-    return json.dumps({'success': True})
