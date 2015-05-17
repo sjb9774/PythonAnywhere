@@ -21,7 +21,7 @@ projects =  [{'name':'Dill Land Surveying', 'status': INACTIVE,
 
 @app.route('/')
 def home():
-    return render_template('home_home.html')
+    return render_template('home/home_home.html')
 
 @app.route(project_1_prefix + '/index.html')
 def p1_home():
