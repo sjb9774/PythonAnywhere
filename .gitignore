@@ -1,3 +1,4 @@
 *.pyc
 ./dillland/server.py
 log*
+\.bash*

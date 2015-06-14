@@ -17,7 +17,8 @@ projects =  [{'name':'Dill Land Surveying', 'status': INACTIVE,
                'home': project_1_prefix + '/index.html'},
              {'name': 'Keen Testing', 'status': ACTIVE,
               'home': project_2_prefix + '/index.html'},
-              {'name': 'Bin Buckets', 'status': INACTIVE}]
+              {'name': 'Bin Buckets', 'status': INACTIVE},
+              {'name': 'Calendar and Organizer', 'status': ACTIVE}]
 
 @app.route('/')
 def home():
